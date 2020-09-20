@@ -65,3 +65,6 @@ README.html
 
 # IDE
 .vs_code/
+
+# Firebase
+.firebaserc
