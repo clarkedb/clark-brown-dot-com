@@ -64,7 +64,7 @@ yarn-error.log
 README.html
 
 # IDE
-.vs_code/
+.vscode/
 
 # Firebase
 .firebaserc
