@@ -1,13 +1,14 @@
 import { graphql } from 'gatsby';
-import * as React from 'react';
+import React, { Component } from 'react';
 import * as styles from './Index.module.scss';
 
-interface IndexPageProps {
+export interface IndexPageProps {
   data: {
     site: {
       siteMetadata: {
-        name: string;
-        tagline: string;
+        index: {
+          default: string;
+        }
       },
     },
   };
@@ -17,25 +18,21 @@ export const indexPageQuery = graphql`
   query IndexPageQuery {
     site {
       siteMetadata {
-        name
-        tagline
+        index {
+          default
+        }
       }
     }
   }
 `;
 
-export default class IndexPage extends React.Component<IndexPageProps, {}> {
+export default class IndexPage extends Component<IndexPageProps, {}> {
 
-  public render() {
-    const {
-      name,
-      tagline,
-    } = this.props.data.site.siteMetadata;
-
+  render() {
     return (
       <div className={styles.Container}>
-        <h1>{name}</h1>
-        <p>{tagline}</p>
+        <h1>My name is Clark Brown.</h1>
+        <p>This is my website.</p>
       </div>
     );
   }
