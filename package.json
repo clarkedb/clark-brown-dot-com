@@ -28,6 +28,8 @@
     "@loadable/component": "^5.12.0",
     "@types/loadable__component": "^5.10.0",
     "@types/react-helmet": "^6.1.0",
+    "@types/react-slick": "^0.23.4",
+    "@types/styled-components": "^5.1.4",
     "babel-plugin-styled-components": "^1.10.7",
     "firebase-tools": "^8.10.0",
     "framer-motion": "^1.10.3",

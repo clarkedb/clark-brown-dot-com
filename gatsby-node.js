@@ -24,12 +24,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogPostTemplate = path.resolve(`src/templates/BlogPost/index.tsx`);
+  const projectPostTemplate = path.resolve(`src/templates/ProjectPost/index.tsx`);
 
   const res = await graphql(`
     query {
       allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "blog" } } }
+        filter: { frontmatter: { category: { eq: "project" } } }
         sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
@@ -54,7 +54,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: `${post.node.fields.slug}`,
-      component: blogPostTemplate,
+      component: projectPostTemplate,
       context: {
         slug: `${post.node.fields.slug}`,
         previous,

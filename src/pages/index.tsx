@@ -1,42 +1,21 @@
-import { graphql } from 'gatsby';
-import * as React from 'react';
-import * as styles from './Index.module.scss';
+import React from 'react';
 
-interface IndexPageProps {
-  data: {
-    site: {
-      siteMetadata: {
-        name: string;
-        tagline: string;
-      },
-    },
-  };
-}
+import Layout from 'components/Layout';
+import SEO from 'components/SEO';
+import HeroBanner from 'components/HeroBanner';
+import Services from 'components/Services';
+import Testimonials from 'components/Testimonials';
 
-export const indexPageQuery = graphql`
-  query IndexPageQuery {
-    site {
-      siteMetadata {
-        name
-        tagline
-      }
-    }
-  }
-`;
+const IndexPage: React.FC = () => {
+  return (
+    <Layout>
+      <SEO title="About Me" />
+      <HeroBanner />
+      <Services />
+      <hr />
+      <Testimonials />
+    </Layout>
+  );
+};
 
-export default class IndexPage extends React.Component<IndexPageProps, {}> {
-
-  public render() {
-    const {
-      name,
-      tagline,
-    } = this.props.data.site.siteMetadata;
-
-    return (
-      <div className={styles.Container}>
-        <h1>{name}</h1>
-        <p>{tagline}</p>
-      </div>
-    );
-  }
-}
+export default IndexPage;
