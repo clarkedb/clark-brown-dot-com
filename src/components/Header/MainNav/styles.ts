@@ -13,15 +13,15 @@ export const MainNav = styled.nav<StyledProps>`
 `;
 
 export const MainNavItem = motion.custom(styled(Link)`
-  ${tw`relative text-indigo-900 border-b border-transparent hover:text-indigo-900 ml-0 sm:ml-8 mt-3 sm:mt-0`};
+  ${tw`relative text-gray-300 border-b border-transparent hover:text-gray-100 ml-0 sm:ml-8 mt-3 sm:mt-0`};
   width: max-content;
 
   &.active {
-    ${tw`border-teal-400`};
+    ${tw`border-gray-500`};
   }
 
   &:before {
-    ${tw`absolute w-full bg-teal-400 h-px left-0 invisible`};
+    ${tw`absolute w-full bg-gray-500 h-px left-0 invisible`};
     content: '';
     bottom: -1px;
     transform: scaleX(0);
@@ -39,7 +39,7 @@ export const ToogleMainNav = styled.button<StyledProps>`
   outline: none !important;
 
   span {
-    ${tw`bg-indigo-500 inline-block w-6 h-px`};
+    ${tw`bg-blue-300 inline-block w-6 h-px`};
     transition: 0.2s;
 
     &:first-child {
@@ -53,7 +53,7 @@ export const ToogleMainNav = styled.button<StyledProps>`
     }
 
     &:nth-child(2) {
-      ${tw`bg-teal-400 inline-block w-8 h-px`};
+      ${tw`bg-blue-300 inline-block w-8 h-px`};
 
       ${({ open }) => (open ? tw`opacity-0` : tw`opacity-1`)};
       transform: ${({ open }) => (open ? 'translate(20px)' : 'none')};

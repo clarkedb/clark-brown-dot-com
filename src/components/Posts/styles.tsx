@@ -10,11 +10,11 @@ export const Post = styled.div`
 `;
 
 export const Card = styled.div`
-  ${tw`w-full h-full rounded-lg flex flex-col overflow-hidden border border-gray-300`};
+  ${tw`bg-gray-800 shadow w-full h-full rounded flex flex-col overflow-hidden border-black`};
 `;
 
 export const Content = styled.div`
-  ${tw`p-4 text-indigo-900`};
+  ${tw`p-4 text-white`};
 `;
 
 export const Image = styled.figure`
@@ -28,7 +28,7 @@ export const Title = styled.h3`
 export const Description = styled.p``;
 
 export const Date = styled.h3`
-  ${tw`text-xs text-indigo-500`};
+  ${tw`text-xs text-blue-500`};
 `;
 
 export const Tags = styled.div`
@@ -36,5 +36,5 @@ export const Tags = styled.div`
 `;
 
 export const Tag = styled.span`
-  ${tw`text-xs text-indigo-900 border border-teal-400 rounded-full px-2 py-1 mr-2`}
+  ${tw`text-xs text-gray-200 border border-blue-500 rounded-full px-2 py-1 mr-2`}
 `;
