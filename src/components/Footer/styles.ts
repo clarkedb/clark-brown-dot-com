@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export const Footer = styled.footer`
-  ${tw`shadow-top py-4`};
+  ${tw`bg-gray-800 shadow-top py-4`};
+`;
+
+export const FooterText = styled.p`
+  ${tw`text-gray-400 text-center mx-auto`};
 `;
 
 export const Links = styled.div`

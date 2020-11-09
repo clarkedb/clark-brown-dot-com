@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 export const Newsletter = styled.section`
-  ${tw`bg-gray-800 mt-auto`};
+  ${tw`bg-blue-900 mt-auto`};
 `;
 
 export const Form = styled.div`

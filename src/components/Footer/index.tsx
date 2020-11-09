@@ -7,6 +7,9 @@ import * as Styled from './styles';
 const Footer: React.FC = () => (
   <Styled.Footer>
     <Container>
+      <Styled.FooterText>
+        © Clark Brown 2020
+      </Styled.FooterText>
       <Styled.Links>
         <Styled.Link
           href="https://github.com/clarkedb"

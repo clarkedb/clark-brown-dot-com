@@ -14,7 +14,7 @@ export const BarWrapper = styled.div`
 `;
 
 export const Bar = styled.div<StyledProps>`
-  ${tw`h-2 bg-blue-500`};
+  ${tw`h-2 bg-blue-400`};
   width: ${({ percentage }) => `${percentage}%`};
 `;
 

@@ -28,7 +28,7 @@ export const Title = styled.h3`
 export const Description = styled.p``;
 
 export const Date = styled.h3`
-  ${tw`text-xs text-blue-500`};
+  ${tw`text-xs text-blue-400`};
 `;
 
 export const Tags = styled.div`
@@ -36,5 +36,5 @@ export const Tags = styled.div`
 `;
 
 export const Tag = styled.span`
-  ${tw`text-xs text-gray-200 border border-blue-500 rounded-full px-2 py-1 mr-2`}
+  ${tw`text-xs text-gray-200 border border-blue-400 rounded-full px-2 py-1 mr-2`}
 `;
