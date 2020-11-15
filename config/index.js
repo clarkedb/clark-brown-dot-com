@@ -4,7 +4,7 @@ module.exports = {
     siteTitle: "Clark Brown Portfolio",
     siteShortTitle: "Clark Brown",
     siteDescription: "Developer, Mathematician, Linux Guy",
-    siteUrl: "https://clark-brown.web.app/",
+    siteUrl: "https://clark-brown.com/",
     siteLanguage: "en_US",
     siteIcon: "content/favicon.png",
     seoTitleSuffix: "Clark Brown",
