@@ -22,13 +22,13 @@ const StyledContentWrapper = styled(ContentWrapper)`
   && {
     width: 100%;
     height: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 6rem;
+    margin-bottom: 0;
     @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
     .greetings {
       display: flex;

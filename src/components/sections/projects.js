@@ -20,10 +20,7 @@ const StyledSection = styled.section`
   .cta-btn {
     display: block;
     text-align: center;
-    margin: 2rem auto;
-    @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-      margin: 0 auto;
-    }
+    margin: 0 auto;
   }
 `
 

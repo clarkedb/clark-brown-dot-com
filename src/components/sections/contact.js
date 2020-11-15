@@ -33,27 +33,29 @@ const StyledContentWrapper = styled(ContentWrapper)`
     .profile {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      align-items: center;
+      justify-content: center;
       margin-top: 3rem;
       margin-bottom: 2rem;
       @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
         flex-direction: row;
-        align-items: center;
         margin-bottom: 3rem;
       }
       .avatar {
         width: 100%;
         max-width: 8.75rem;
         border-radius: 50%;
-        margin-right: 4rem;
+        margin-right: 0;
         margin-bottom: 2rem;
         @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
           margin-bottom: 0;
+          margin-right: 4rem;
         }
       }
       .details {
         font-size: 1.125rem;
         line-height: 2rem;
+        text-align: center;
       }
     }
   }

@@ -12,7 +12,10 @@ const StyledFooter = styled.footer`
   width: 100%;
   height: ${({ theme }) => theme.footerHeight};
   background: ${({ theme }) => theme.colors.primary};
-  margin-top: 10rem;
+  margin-top: 5rem;
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    margin-top: 8rem;
+  }
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
@@ -20,10 +23,16 @@ const StyledContentWrapper = styled(ContentWrapper)`
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+     flex-direction: row;
+     justify-content: space-between;
+    }
     align-items: center;
     .footer-links {
       /* Adjust width of links wrapper accordingly */
+      margin-top: 1rem;
       width: 10rem;
       display: flex;
       justify-content: space-between;
