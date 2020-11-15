@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Button from "../styles/Button"
 import ContentWrapper from "../styles/ContentWrapper"
 
 const StyledSection = styled.section`
@@ -32,9 +33,17 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" meta={[{ name: 'robots', content: 'noindex'}]} />
     <StyledSection>
       <StyledContentWrapper>
-        <h1>NOT FOUND</h1>
+        <h1>PAGE NOT FOUND</h1>
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       </StyledContentWrapper>
+      <a
+        className="cta-btn"
+        href='/'
+        >
+        <Button type="button" textAlign="center" color="primary" center>
+          Take Me Home
+        </Button>
+      </a>
     </StyledSection>
   </Layout>
 )
