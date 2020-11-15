@@ -1,6 +1,7 @@
 import React from "react"
 
 import IconXing from "./xing"
+import IconInstagram from "./instagram"
 import IconLinkedIn from "./linkedin"
 import IconMedium from "./medium"
 import IconGitHub from "./github"
@@ -22,6 +23,8 @@ const Icon = ({ name, color }) => {
       return <IconBehance color={color} />
     case "external":
       return <IconExternal color={color} />
+    case "instagram":
+      return <IconInstagram color={color} />
     default:
       return null
   }

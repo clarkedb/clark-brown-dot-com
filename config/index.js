@@ -28,6 +28,10 @@ module.exports = {
             name: "Github",
             url: "https://github.com/clarkedb"
         },
+        {
+            name: "Instagram",
+            url: "https://instagr.am/cebrown8"
+        }
     ],
   
     navLinks: {
