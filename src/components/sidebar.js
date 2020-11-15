@@ -41,12 +41,15 @@ const StyledContainer = styled.div`
 `
 
 const StyledNav = styled.nav`
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    width: 40%;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: ${({ theme }) => theme.colors.background};
   height: 100vh;
-  width: 55%;
+  width: 100%
   text-align: left;
   padding: 2rem;
   position: relative;

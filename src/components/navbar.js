@@ -8,11 +8,11 @@ const { navLinks } = config
 
 const StyledNav = styled.nav`
   display: none;
-  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 31.25rem;
+    width: 40%;
     background: ${({ theme }) => theme.colors.background};
     a {
       color: ${({ theme }) => theme.colors.primary};
