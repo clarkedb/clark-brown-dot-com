@@ -228,7 +228,7 @@ const Projects = ({ content }) => {
       initial[project.node.frontmatter.position] = false
     })
     setOnScreen(initial)
-  }, [])
+  }, [projects])
 
   // Required for animating the title
   const tRef = useRef()
