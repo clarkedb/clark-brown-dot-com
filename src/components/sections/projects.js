@@ -228,7 +228,9 @@ const Projects = ({ content }) => {
       initial[project.node.frontmatter.position] = false
     })
     setOnScreen(initial)
-  }, [projects])
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   // Required for animating the title
   const tRef = useRef()
