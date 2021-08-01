@@ -1,10 +1,10 @@
 module.exports = {
-
     author: "@clarkedb",
     siteTitle: "Clark Brown Portfolio",
     siteShortTitle: "Clark Brown",
-    siteDescription: "Developer, Mathematician, Linux Guy",
+    siteDescription: "Problem Solver, Developer, Applied Mathematician, Linux Guy",
     siteUrl: "https://clark-brown.com/",
+    siteImage: "/images/code.jpg",
     siteLanguage: "en_US",
     siteIcon: "content/favicon.png",
     seoTitleSuffix: "Clark Brown",
