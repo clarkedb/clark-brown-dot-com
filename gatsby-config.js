@@ -1,12 +1,14 @@
-const config = require('./config');
+const config = require('./config')
 const theme = require('./src/styles/Theme')
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,
     author: config.author,
-    siteUrl: config.siteUrl,
+    siteUrl: process.env.GATSBY_SITE_URL || config.siteUrl,
+    image: config.siteImage,
   },
   plugins: [
     `gatsby-plugin-eslint`,
