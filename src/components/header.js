@@ -11,11 +11,13 @@ import Logo from "./logo"
 import Sidebar from "./sidebar"
 import Navbar from "./navbar"
 
-const StyledHeader = motion.custom(styled.header`
+const StyledHeader =styled.header`
   width: 100%;
   height: ${({ theme }) => theme.headerHeight};
   background: ${({ theme }) => theme.colors.background};
-`)
+`
+
+const MotionHeader = motion(StyledHeader)
 
 const StyledContentWrapper = styled(ContentWrapper)`
   && {
@@ -119,7 +121,7 @@ const Header = () => {
   }
 
   return (
-    <StyledHeader initial={{ opacity: 0, y: -10 }} animate={controls}>
+    <MotionHeader initial={{ opacity: 0, y: -10 }} animate={controls}>
       {/* add blur class to body when sidebar is opened */}
       <Helmet bodyAttributes={{ class: open ? "blur" : "" }} />
       <StyledContentWrapper>
@@ -128,7 +130,7 @@ const Header = () => {
         </Link>
         {navigation}
       </StyledContentWrapper>
-    </StyledHeader>
+    </MotionHeader>
   )
 }
 
