@@ -61,7 +61,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-const AnimatedUnderlining = motion.custom(Underlining)
+const AnimatedUnderlining = motion(Underlining)
 
 const Hero = ({ content }) => {
   const { frontmatter, body } = content[0].node
