@@ -11,11 +11,13 @@ import Underlining from "../../styles/Underlining"
 
 const { mediumRssFeed, shownArticles } = config
 
-const StyledSection = motion.custom(styled.section`
+const StyledSection = styled.section`
   width: 100%;
   height: auto;
   background: ${({ theme }) => theme.colors.background};
-`)
+`
+
+const MotionSection = motion(StyledSection)
 
 const StyledContentWrapper = styled(ContentWrapper)`
   && {
@@ -140,7 +142,7 @@ const Articles = () => {
   },[isIntroDone, articlesControls, MAX_ARTICLES])
 
   return (
-    <StyledSection
+    <MotionSection
       id="articles"
       initial={{ opacity: 0, y: 20 }}
       animate={articlesControls}
@@ -190,7 +192,7 @@ const Articles = () => {
             ))}
         </div>
       </StyledContentWrapper>
-    </StyledSection>
+    </MotionSection>
   )
 }
 
