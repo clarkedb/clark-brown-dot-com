@@ -57,7 +57,7 @@
     "eslint-plugin-flowtype": "4.3.0",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-mdx": "^1.6.3",
+    "eslint-plugin-mdx": "^1.16.0",
     "eslint-plugin-react": "7.26.1"
   },
   "license": "MIT",
