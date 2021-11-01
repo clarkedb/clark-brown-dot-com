@@ -30,7 +30,7 @@
     "gatsby-plugin-sharp": "^2.7.1",
     "gatsby-plugin-sitemap": "^2.6.0",
     "gatsby-plugin-styled-components": "^3.10.0",
-    "gatsby-plugin-typescript": "^2.4.0",
+    "gatsby-plugin-typescript": "^2.12.1",
     "gatsby-remark-images": "^3.11.1",
     "gatsby-source-filesystem": "^2.1.39",
     "gatsby-transformer-sharp": "^2.12.1",
