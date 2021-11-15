@@ -19,7 +19,7 @@
     "firebase-tools": "^9.22.0",
     "framer-motion": "^5.0.0",
     "gatsby": "^2.24.0",
-    "gatsby-image": "^2.2.36",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-gtag": "^1.0.12",
     "gatsby-plugin-manifest": "^2.3.2",
     "gatsby-plugin-mdx": "^2.14.0",
