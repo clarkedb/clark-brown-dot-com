@@ -18,7 +18,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "firebase-tools": "^9.22.0",
     "framer-motion": "^5.0.0",
-    "gatsby": "^2.24.0",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-gtag": "^1.0.12",
     "gatsby-plugin-manifest": "^2.3.2",
