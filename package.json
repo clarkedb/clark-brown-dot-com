@@ -58,7 +58,7 @@
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-mdx": "^1.16.0",
-    "eslint-plugin-react": "7.26.1"
+    "eslint-plugin-react": "7.27.1"
   },
   "license": "MIT",
   "repository": {
