@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import styled, { ThemeProvider } from "styled-components"
-import "typeface-roboto"
+import "@fontsource/roboto/latin.css";
 
 import Context from "../context/"
 import Theme from "../styles/Theme"
