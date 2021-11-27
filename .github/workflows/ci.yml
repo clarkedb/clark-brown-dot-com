@@ -43,8 +43,3 @@ jobs:
         env:
           CI: true
   
-      - name: Archive production artifact
-        uses: actions/upload-artifact@master
-        with:
-          name: public
-          path: public
