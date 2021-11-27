@@ -27,6 +27,17 @@ jobs:
     needs: lint
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Use Node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+  
+      - name: Install dependencies
+        run: npm ci
+
       - name: Build Gatsby
         run: npm run build
         env:
