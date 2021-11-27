@@ -20,7 +20,6 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-typescript`,
     // {
     //   resolve: `gatsby-plugin-gtag`,
     //   options: {
