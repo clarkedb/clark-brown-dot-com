@@ -13,7 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@babel/core": "^7.16.0",
+    "@babel/core": "^7.16.5",
     "@fontsource/roboto": "^4.5.1",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
@@ -33,7 +33,7 @@
     "gatsby-plugin-sitemap": "^5.4.0",
     "gatsby-plugin-styled-components": "^5.4.0",
     "gatsby-remark-images": "^6.4.0",
-    "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-source-filesystem": "^4.4.0",
     "gatsby-transformer-sharp": "^4.4.0",
     "intersection-observer": "^0.12.0",
     "node-sass": "^7.0.0",
