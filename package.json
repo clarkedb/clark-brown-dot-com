@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "eslint": "^8.4.0",
-    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-react-app": "^7.0.0",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "2.25.3",
