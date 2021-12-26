@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 
 // https://usehooks.com/useOnScreen/
 
-export default (ref, threshold = 0.25) => {
+const useOnScreen = (ref, threshold = 0.25) => {
   const [isIntersecting, setIntersecting] = useState(false)
 
   useEffect(() => {
@@ -27,3 +27,5 @@ export default (ref, threshold = 0.25) => {
   }, [ref, threshold])
   return isIntersecting
 }
+
+export default useOnScreen
