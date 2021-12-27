@@ -40,7 +40,7 @@ const NotFoundPage = () => (
         className="cta-btn"
         href='/'
         >
-        <Button type="button" textAlign="center" color="primary" center>
+        <Button aria-label="return home" type="button" textAlign="center" color="primary" center>
           Take Me Home
         </Button>
       </a>
