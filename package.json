@@ -34,7 +34,7 @@
     "gatsby-plugin-styled-components": "^5.4.0",
     "gatsby-remark-images": "^6.4.0",
     "gatsby-source-filesystem": "^4.4.0",
-    "gatsby-transformer-sharp": "^4.4.0",
+    "gatsby-transformer-sharp": "^4.5.0",
     "intersection-observer": "^0.12.0",
     "node-sass": "^7.0.1",
     "prop-types": "^15.8.1",
