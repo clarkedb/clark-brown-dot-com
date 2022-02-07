@@ -50,7 +50,7 @@
     "webpack": "^5.67.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "babel-jest": "^27.4.6",
     "babel-preset-gatsby": "^2.6.0",
