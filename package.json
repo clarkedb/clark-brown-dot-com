@@ -21,7 +21,7 @@
     "dotenv": "^16.0.0",
     "firebase-tools": "^10.0.1",
     "framer-motion": "^6.2.6",
-    "gatsby": "^4.6.2",
+    "gatsby": "^4.7.2",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-gtag": "^1.0.12",
     "gatsby-plugin-manifest": "^4.7.0",
