@@ -61,7 +61,7 @@
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-mdx": "^1.16.0",
-    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react": "^7.29.2",
     "gatsby-plugin-eslint": "^4.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
