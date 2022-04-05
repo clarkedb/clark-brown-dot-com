@@ -34,7 +34,7 @@
     "gatsby-plugin-sitemap": "^5.11.1",
     "gatsby-plugin-styled-components": "^5.11.0",
     "gatsby-remark-images": "^6.11.1",
-    "gatsby-source-filesystem": "^4.10.1",
+    "gatsby-source-filesystem": "^4.11.1",
     "gatsby-transformer-sharp": "^4.11.0",
     "intersection-observer": "^0.12.0",
     "node-sass": "^7.0.1",
