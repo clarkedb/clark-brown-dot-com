@@ -54,7 +54,7 @@
     "@testing-library/react": "^12.1.5",
     "babel-jest": "^28.0.3",
     "babel-preset-gatsby": "^2.14.0",
-    "eslint": "^8.14.0",
+    "eslint": "^8.15.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-flowtype": "^8.0.3",
