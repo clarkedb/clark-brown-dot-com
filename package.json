@@ -30,7 +30,7 @@
     "gatsby-plugin-react-helmet": "^5.17.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-sass": "^5.15.1",
-    "gatsby-plugin-sharp": "^4.15.1",
+    "gatsby-plugin-sharp": "^4.17.0",
     "gatsby-plugin-sitemap": "^5.15.1",
     "gatsby-plugin-styled-components": "^5.15.0",
     "gatsby-remark-images": "^6.15.1",
