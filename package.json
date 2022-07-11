@@ -20,7 +20,7 @@
     "babel-plugin-styled-components": "^2.0.7",
     "dotenv": "^16.0.1",
     "firebase-tools": "^11.2.1",
-    "framer-motion": "^6.4.2",
+    "framer-motion": "^6.4.3",
     "gatsby": "^4.18.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-gtag": "^1.0.12",
