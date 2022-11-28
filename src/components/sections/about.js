@@ -97,7 +97,7 @@ const About = ({ content }) => {
         >
           <h3 className="section-title">{frontmatter.title}</h3>
           <div className="text-content">
-            <MDXRenderer>{body}</MDXRenderer>
+            {body}
           </div>
         </motion.div>
         <motion.div

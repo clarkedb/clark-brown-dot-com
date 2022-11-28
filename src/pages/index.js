@@ -25,8 +25,8 @@ const IndexPage = ({ data }) => {
       {false && <Articles />}
       <About content={data.about.edges} />
       <Interests content={data.interests.edges} />
-      <Projects content={data.projects.edges} />
-      <Contact content={data.contact.edges} />
+      {/* <Projects content={data.projects.edges} /> */}
+      {/* <Contact content={data.contact.edges} /> */}
     </Layout>
   )
 }
@@ -38,124 +38,68 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const pageQuery = graphql`
-  {
-    index: allMdx(filter: { fileAbsolutePath: { regex: "/index/index/" } }) {
-      edges {
-        node {
-          frontmatter {
-            seoTitle
-            useSeoTitleSuffix
+{
+  index: allMdx(filter: {internal: {contentFilePath: {regex: "/index/index/"}}}) {
+    edges {
+      node {
+        frontmatter {
+          seoTitle
+          useSeoTitleSuffix
+        }
+      }
+    }
+  }
+  hero: allMdx(filter: {internal: {contentFilePath: {regex: "/index/hero/"}}}) {
+    edges {
+      node {
+        body
+        frontmatter {
+          greetings
+          title
+          subtitlePrefix
+          subtitle
+          icon {
+            childImageSharp {
+              fluid(maxWidth: 60, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
     }
-    hero: allMdx(filter: { fileAbsolutePath: { regex: "/index/hero/" } }) {
-      edges {
-        node {
-          body
-          frontmatter {
-            greetings
-            title
-            subtitlePrefix
-            subtitle
+  }
+  about: allMdx(filter: {internal: {contentFilePath: {regex: "/index/about/"}}}) {
+    edges {
+      node {
+        body
+        frontmatter {
+          title
+          image {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  interests: allMdx(
+    filter: {internal: {contentFilePath: {regex: "/index/interests/"}}}
+  ) {
+    edges {
+      node {
+        frontmatter {
+          title
+          shownItems
+          interests {
+            name
             icon {
               childImageSharp {
-                fluid(maxWidth: 60, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    about: allMdx(filter: { fileAbsolutePath: { regex: "/index/about/" } }) {
-      edges {
-        node {
-          body
-          frontmatter {
-            title
-            image {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    interests: allMdx(
-      filter: { fileAbsolutePath: { regex: "/index/interests/" } }
-    ) {
-      edges {
-        node {
-          exports {
-            shownItems
-            interests {
-              name
-              icon {
-                childImageSharp {
-                  fixed(width: 20, height: 20, quality: 90) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
-            }
-          }
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
-    projects: allMdx(
-      filter: {
-        fileAbsolutePath: { regex: "/index/projects/" }
-        frontmatter: { visible: { eq: "true" } }
-      }
-      sort: { fields: [frontmatter___position], order: ASC }
-    ) {
-      edges {
-        node {
-          body
-          frontmatter {
-            title
-            category
-            emoji
-            external
-            github
-            screenshot {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 90) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            tags
-            position
-            buttonVisible
-            buttonUrl
-            buttonText
-          }
-        }
-      }
-    }
-    contact: allMdx(
-      filter: { fileAbsolutePath: { regex: "/index/contact/" } }
-    ) {
-      edges {
-        node {
-          body
-          frontmatter {
-            title
-            name
-            email
-            profileImage {
-              childImageSharp {
-                fluid(maxWidth: 400, quality: 90) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 20, height: 20, quality: 90) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }
@@ -164,4 +108,55 @@ export const pageQuery = graphql`
       }
     }
   }
+  projects: allMdx(
+    filter: {internal: {contentFilePath: {regex: "/index/projects/"}}, frontmatter: {visible: {eq: "true"}}}
+    sort: {frontmatter: {position: ASC}}
+  ) {
+    edges {
+      node {
+        body
+        frontmatter {
+          title
+          category
+          emoji
+          external
+          github
+          screenshot {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          tags
+          position
+          buttonVisible
+          buttonUrl
+          buttonText
+        }
+      }
+    }
+  }
+  contact: allMdx(
+    filter: {internal: {contentFilePath: {regex: "/index/contact/"}}}
+  ) {
+    edges {
+      node {
+        body
+        frontmatter {
+          title
+          name
+          email
+          profileImage {
+            childImageSharp {
+              fluid(maxWidth: 400, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 `

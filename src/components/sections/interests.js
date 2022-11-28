@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { motion, useAnimation } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 
 import { detectMobileAndTablet, isSSR } from "../../utils"
 import { useOnScreen }  from "../../hooks/"
@@ -109,8 +109,8 @@ const StyledInterests = styled.div`
 `
 
 const Interests = ({ content }) => {
-  const { exports, frontmatter } = content[0].node
-  const { shownItems, interests } = exports
+  const { frontmatter } = content[0].node
+  const { shownItems, interests } = frontmatter
 
   const [shownInterests, setShownInterests] = useState(shownItems)
 
@@ -183,11 +183,11 @@ Interests.propTypes = {
   content: PropTypes.arrayOf(
     PropTypes.shape({
       node: PropTypes.shape({
-        exports: PropTypes.shape({
+        frontmatter: PropTypes.shape({
+          title: PropTypes.string.isRequired,
           interests: PropTypes.array.isRequired,
           shownItems: PropTypes.number.isRequired,
-        }).isRequired,
-        frontmatter: PropTypes.object.isRequired,
+        })
       }).isRequired,
     }).isRequired
   ).isRequired,

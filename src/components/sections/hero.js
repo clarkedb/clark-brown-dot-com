@@ -122,7 +122,8 @@ const Hero = ({ content }) => {
             </AnimatedUnderlining>
           </h2>
           <div className="description">
-            <MDXRenderer>{body}</MDXRenderer>
+            It is undefined : {MDXRenderer === undefined ? 'true' : 'false'}
+            {MDXRenderer && <MDXRenderer>{body}</MDXRenderer>}
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>

@@ -79,7 +79,7 @@ export default Privacy
 
 export const pageQuery = graphql`
   {
-    privacy: allMdx(filter: { fileAbsolutePath: { regex: "/privacy/" } }) {
+    privacy: allMdx(filter: { internal: { contentFilePath: { regex: "/privacy/" } } }) {
       edges {
         node {
           body
